@@ -1,21 +1,16 @@
-function robotNumbers(integer) {
-  const threeArray = [3];
-  const twoArray = [2];
-  const oneArray = [1];
-  let string = "29";
-  const stringArray = string.split("");
-  let xArray = [];
-    for(i= 0; i <= stringArray; i++) {
-    if (threeArray.includes(integer)) {
-      xArray.push("won't you be my neighbor");
-    } else if(twoArray.includes(integer)) {
-      xArray.push("*boop*");
-    } else if(oneArray.includes(integer)) {
-      xArray.push("*beep*");
-    } else {
-      xArray.push(i)
+function robotNumbers() {
+  let strArray = []
+  let num = userInput;
+  for(i = 0; i <= num; i++) {
+    if(i.toString().includes(3)) {
+      strArray.replace("won't you be my neighbor")
+    }else if(i.toString().includes(2)) {
+      strArray.push("*boop*")
+    }else if(i.toString().includes(1)) {
+      strArray.push("*beep*")
+    }else {
+      strArray.push(i);
     }
-    const finalString = xArray.join("");
-    return finalString 
   }
+  return stringArray
 }
