@@ -13,5 +13,11 @@ function robotNumbers(number) {
   } return numArray
 }
 
+function wrongType() {
+  if (Element === !Number){
+    return alert("Please enter a real number")
+  }
+};
+
 
 
