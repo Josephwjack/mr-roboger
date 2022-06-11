@@ -22,5 +22,7 @@ function wrongType(element) {
   }
 };
 
-
+$(document).ready(function() {
+  $("#formLanguage").submit(function(event) {
+    event.preventDefault();
 
