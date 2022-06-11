@@ -21,8 +21,11 @@ function wrongType(element) {
     return alert("Please enter a real number")
   }
 };
-
+// UI logic
 $(document).ready(function() {
-  $("#formLanguage").submit(function(event) {
+  $("form#userInput").submit(function(event) {
     event.preventDefault();
-
+    $("#results").toggle();
+    $("form#userInput").toggle();
+  })
+});
