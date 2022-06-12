@@ -11,13 +11,17 @@
   <div class="container">
     <h1> Welcome to Mr. Roboger's Neighborhood</h1>
     <form id="numbers">
-      <label> Let's count:</label>
-      <input id="user" class="form-control" type="number">
-      <button id="btn" type="submit" class="btn-lg"><em>Count em up neighbor!</em></button>
+    <div class="form-group">
+      <label for="userInput">Let's count:</label>
+      <input id="userInput" class="form-control" type="number">
+      <button type="submit" class="btn-lg"><em>Count em up neighbor!</em></button>
+      <button onclick="(window.location.reload())" class="btn-lg">Try Again</button>
     </form>
-  </div>
-    <button onclick="(window.location.reload())" class="btn-lg">Try Again</button>
-  <div id="output">
+    </div>
+    <div class="outputClass">
+      <div id="output">
+      </div>
+    </div>
   </div>
 </body>
 </html>

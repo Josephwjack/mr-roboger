@@ -1,32 +1,39 @@
-function robotNumbers(numberIn) {
+function robotNumbers(userInput) {
   let numArray = [];
-  for(let index=0; index <= numberIn; index++) {
+  for(let index=0; index <= userInput; index++) {
     if (index.toString().includes(3)) {
-      numArray.push("wont you be my neighbor")
+      numArray.push(" wont you be my neighbor ")
 
     }else if(index.toString().includes(2)) {
-      numArray.push("boop")
+      numArray.push(" boop ")
 
     }else if(index.toString().includes(1)) {
-      numArray.push("beep")
+      numArray.push(" beep ")
 
     }else {
       numArray.push(index);
     }
-  } return numArray
+  } return numArray.toString(" ");
 
 }
-function wrongType(input) {
-  if (input === !Number){
-    return alert("Please enter a real number")
-  };
-};
-
+// function wrongType(input) {
+//   if (input === !Number){
+//     return alert("Please enter a real number")
+//   };
+// };
 $(document).ready(function() {
-  $("#numbers").ready(function(event) {
-    event.preventDefault();
-    let numberIn =
+  $("#numbers").submit(function(event) {
+  event.preventDefault();
+  const userInput = $("#userInput").val();
+  const result = robotNumbers(userInput);
+  $("#output").html(result);
+  $("output").show()
+
+    })
+  })
 
 
-  } 
-}
+  
+  
+ 
+
