@@ -1,6 +1,6 @@
-function robotNumbers(number) {
+function robotNumbers(numberIn) {
   let numArray = [];
-  for(let index=0; index <= number; index++) {
+  for(let index=0; index <= numberIn; index++) {
     if (index.toString().includes(3)) {
       numArray.push("wont you be my neighbor")
 
@@ -13,19 +13,20 @@ function robotNumbers(number) {
     }else {
       numArray.push(index);
     }
-  } return numArray;
-}
+  } return numArray
 
-function wrongType(element) {
-  if (element === !Number){
+}
+function wrongType(input) {
+  if (input === !Number){
     return alert("Please enter a real number")
-  }
+  };
 };
-// UI logic
+
 $(document).ready(function() {
-  $("form#userInput").submit(function(event) {
+  $("#numbers").ready(function(event) {
     event.preventDefault();
-    $("#results").toggle();
-    $("form#userInput").toggle();
-  })
-});
+    let numberIn =
+
+
+  } 
+}
