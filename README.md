@@ -52,5 +52,9 @@ Expected Output: "Alert: Please enter a real number"
 * Open index.html
 * Enter number and see results
 
+### Known Bugs
+
+* No known bugs at this point.
+
 ### License
 **_MIT_** &copy; _Joseph Jack 2022_
