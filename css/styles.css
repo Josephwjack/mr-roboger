@@ -1,3 +1,34 @@
+body {
+  background: url("https://live.staticflickr.com/4058/4323934220_6ea46f5d08_b.jpg")
+}
+h1 {
+  font-weight: 100;
+  padding: 5;
+}
+  .container {
+  background-color: grey;
+  text-align: center;
+  font-size: medium;
+  font-weight: 30px;
+  padding: 10[px];
+  font-stretch: semi-expanded;
+  border-bottom: 20px;
+  text-align: center;
 
+}
 
+#btn {
+  margin: 20px;
+  padding: 5px;
+
+}
+#output {
+  font-size: large;
+text-align: center;
+text-shadow: 5px;
+  font-style: normal;
+  color: black;
+  accent-color: teal;
+  text-shadow: 5px;
+}
 
